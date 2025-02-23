@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Output directories
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.log
+*.lock
+
+# IDE 설정 파일 (optional)
+.vscode/
+.idea/
+.DS_Store  # macOS에서 생성되는 파일
+
+# Coverage reports (테스트 커버리지)
+coverage/
+
+# Parcel cache (사용하는 경우)
+.cache/
+
+# ESLint cache (사용하는 경우)
+.eslintcache
+
+# TypeScript build (사용하는 경우)
+*.tsbuildinfo
+
+# Local npm packages (optional)
+*.tgz
