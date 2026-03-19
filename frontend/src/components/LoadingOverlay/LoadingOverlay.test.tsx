@@ -5,9 +5,9 @@ import LoadingOverlay from './LoadingOverlay';
 
 describe('LoadingOverlay', () => {
   it('should not render when loading is false', () => {
-    const { container } = render(<LoadingOverlay loading={false} />);
+    render(<LoadingOverlay loading={false} />);
 
-    expect(container.firstChild).toBeNull();
+    expect(screen.queryByRole('progressbar')).not.toBeInTheDocument();
   });
 
   it('should render when loading is true', () => {

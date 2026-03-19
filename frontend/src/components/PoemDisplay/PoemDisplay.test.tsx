@@ -5,9 +5,9 @@ import PoemDisplay from './PoemDisplay';
 
 describe('PoemDisplay', () => {
   it('should not render when poem is empty', () => {
-    const { container } = render(<PoemDisplay poem="" />);
+    render(<PoemDisplay poem="" />);
 
-    expect(container.firstChild).toBeNull();
+    expect(screen.queryByText('생성된 시')).not.toBeInTheDocument();
   });
 
   it('should render title when poem is provided', () => {

@@ -1,4 +1,4 @@
-import { convertFileToBase64, ImageData } from '../../src/services/imageService';
+import { convertFileToBase64 } from '../../src/services/imageService';
 
 describe('ImageService', () => {
   describe('convertFileToBase64', () => {
