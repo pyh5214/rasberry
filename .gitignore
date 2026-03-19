@@ -16,7 +16,10 @@ build/
 # Temporary files
 *.tmp
 *.log
-*.lock
+
+# Claude Code / OMC internal state
+.omc/
+.claude/
 
 # IDE 설정 파일 (optional)
 .vscode/
